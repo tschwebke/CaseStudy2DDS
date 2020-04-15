@@ -1,0 +1,29 @@
+,,Personal,,,Career Growth,,,Work Quality,,,Compensation
+ID,x,Age,,x,Department,,x,EnvironmentSatisfaction,,x,Salary
+Attrition,x,Gender,,x,BusinessTravel,,x,JobSatisfaction,,x,OverTime
+,x,MaritalStatus,,x,JobInvolvement,,x,RelationshipSatisfaction,,x,PercentSalaryHike
+Not Useful,x,DistanceFromHome,,x,JobLevel,,x,WorkLifeBalance,,x,PerformanceRating
+Over18,x,Education,,x,JobRole,,,,,x,StockOptionLevel
+EmployeeCount,x,EducationField,,x,NumCompaniesWorked,,,,,,
+StandardHours,,EmployeeNumber,,x,TotalWorkingYears,,,,,,
+DailyRate,,,,x,TrainingTimesLastYear,,,,,,
+HourlyRate,,,,x,YearsAtCompany,,,,,,
+MonthlyIncome,,,,x,YearsInCurrentRole,,,,,,
+MonthlyRate,,,,x,YearsSinceLastPromotion,,,,,,
+,,,,x,YearsWithCurrManager,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,Role vs,Gender vs,,,,,,,,
+,,JobSatisfaction,Salary,,,,,,,,
+,,JobInvolvement,Role,,,,,,,,
+,,JobLevel,Education,,,,,,,,
+,,Education,EducationField,,,,,,,,
+,,EducationField,MaritalStatus,,,,,,,,
+,,Salary,Age,,,,,,,,
+,,OverTime,,,,,,,,,
+,,WorkLifeBalance,,,,,,,,,
+,,YearsAtCompany,,,,,,,,,
+,,TotalWorkingYears,,,,,,,,,
+,,NumCompaniesWorked,,,,,,,,,
+,,YearsInCurrentRole,,,,,,,,,
