@@ -2,7 +2,9 @@
 title: "Case Study 2"
 author: "Thad Schwebke"
 date: "4/9/2020"
-output: html_document
+output: 
+  html_document: 
+    toc: yes
 ---
 # Setup
 ```{r setup, include=FALSE}
@@ -81,50 +83,50 @@ The initial summary of the data shows us that there are 36 features with 870 obs
 The Attrition Rate is 16.1%.
 
 ### Individuals
-Employees: 870
-Avg age: 36.8 years
-Gender
-* Male: 59.3% 
-* Female: 40.7%
-Mean years of education: 2.9 years
+* Employees: 870
+* Avg age: 36.8 years
+* Gender
+  + Male: 59.3% 
+  + Female: 40.7%
+* Mean years of education: 2.9 years
 
 ### Compensation
-Avg yearly income: $76,683
-Avg salary increase: 15.2%
-Employees overtime: 29%
+* Avg yearly income: $76,683
+* Avg salary increase: 15.2%
+* Employees overtime: 29%
 
 ### Performance
-Avg performance rating: 3.2
-Avg years in current role: 4.2 years
-Avg years since last promotion: 2.2 years
+* Avg performance rating: 3.2
+* Avg years in current role: 4.2 years
+* Avg years since last promotion: 2.2 years
 
 ### Roles
-Avg years at company: 7 years
-Avg years with current manager: 4.14 years
+* Avg years at company: 7 years
+* Avg years with current manager: 4.14 years
 
-Number of departments: 3 
-* Sales: 31.38%
-* Research & Development: 64.6%
-* Human Resources: 4.02%
+* Number of departments: 3 
+  + Sales: 31.38%
+  + Research & Development: 64.6%
+  + Human Resources: 4.02%
 
-Number of job roles: 9
-* Sales Executive: 22.99%
-* Research Director: 5.86%
-* Manufacturing Director: 10%
-* Research Scientist: 19.77%
-* Sales Representative: 6.09%
-* Healthcare Representative: 8.74%
-* Manager: 5.86%
-* Human Resources: 3.1%
-* Laboratory Technician: 17.59% 
+* Number of job roles: 9
+  + Sales Executive: 22.99%
+  + Research Director: 5.86%
+  + Manufacturing Director: 10%
+  + Research Scientist: 19.77%
+  + Sales Representative: 6.09%
+  + Healthcare Representative: 8.74%
+  + Manager: 5.86%
+  + Human Resources: 3.1%
+  + Laboratory Technician: 17.59% 
 
 ### Employee Health Ratings
-Satisfaction Ratings
-* Work environment: 2.7
-* Job involvement: 2.7
-* Overall job satisfaction: 2.7
-* Relationship rating: 2.7
-* Work Life Balance: 2.8
+* Satisfaction Ratings
+  + Work environment: 2.7
+  + Job involvement: 2.7
+  + Overall job satisfaction: 2.7
+  + Relationship rating: 2.7
+  + Work Life Balance: 2.8
 
 ### Unimportant variables
 * DailyRate
@@ -905,18 +907,6 @@ It was reduced to --
 MonthlyIncome ~ Department + JobRole + YearsWithCurrManager + TotalWorkingYears + JobLevel
 
 The p-value for the intercept is 0.030559, which is below than 0.05.
-
-Coefficients:
-                     Estimate Std. Error t value             Pr(>|t|)    
-(Intercept)          -540.629    249.456  -2.167             0.030559 *  
-Department           -794.711    132.857  -5.982        0.00000000355 ***
-JobRole               106.370     28.142   3.780             0.000171 ***
-DistanceFromHome      -14.111      6.216  -2.270             0.023497 *  
-YearsWithCurrManager  -56.951     15.967  -3.567             0.000386 ***
-TotalWorkingYears      62.304     11.855   5.256        0.00000019683 ***
-JobLevel             3827.968     77.210  49.579 < 0.0000000000000002 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 1355 on 689 degrees of freedom
 Multiple R-squared:  0.9135,	Adjusted R-squared:  0.9128 
